@@ -1,0 +1,11 @@
+# Versions used for local CPU validation. Install PyTorch's CPU build as appropriate.
+torch==2.11.0
+ncps==1.0.1
+gymnasium==0.29.1
+numpy==1.26.4
+scipy==1.16.3
+scikit-learn==1.6.1
+pandas==2.2.2
+matplotlib==3.9.2
+PyYAML==6.0.2
+pytest==9.1.1

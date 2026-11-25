@@ -1,0 +1,16 @@
+# One bounded training sanity check, not a scientific architecture comparison.
+label: smoke
+output: results/learning_check
+families: [mlp]
+wirings: [dense]
+tasks: [balance]
+sizes: [24]
+seeds: [0]
+budgets: [2048, 65536, 300000]
+evaluation:
+  episodes: 10
+probe:
+  episodes: 6
+analysis:
+  bootstrap: 12
+  active_min: 0

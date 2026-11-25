@@ -1,0 +1,5 @@
+extends: full.yaml
+output: results/pilot
+sizes: [12, 24]
+budgets: [100000, 300000, 1000000]
+seeds: [0, 1, 2, 3, 4, 5]

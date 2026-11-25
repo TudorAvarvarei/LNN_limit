@@ -1,0 +1,7 @@
+extends: full.yaml
+output: results/full
+wirings: [ncp]
+sizes: [12, 24]
+budgets: [300000, 2000000]
+sparsities: [0.2, 0.5, 0.8]
+# Optional only. Shared run identities permit reuse of already available .5 checkpoints.

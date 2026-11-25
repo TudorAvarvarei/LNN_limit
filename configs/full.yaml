@@ -1,0 +1,8 @@
+label: scientific
+output: results/full
+families: [cfc, ltc, gru, lstm, mlp, rnn]
+wirings: [dense, ncp]
+tasks: [balance, swingup]
+sizes: [8, 12, 16, 24, 32, 64]
+budgets: [100000, 300000, 1000000, 2000000, 5000000]
+seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

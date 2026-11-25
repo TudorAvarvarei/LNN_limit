@@ -1,0 +1,28 @@
+label: smoke
+output: results/smoke
+sizes: [8]
+budgets: [128, 256]
+seeds: [0]
+env:
+  horizon: 64
+ppo:
+  n_envs: 2
+  rollout_steps: 32
+  sequence_length: 8
+  minibatch_sequences: 4
+  epochs: 1
+evaluation:
+  episodes: 6
+  dwell: 8
+  final_window: 16
+  recovery_dwell: 3
+probe:
+  episodes: 6
+  burn_in: 2
+analysis:
+  bootstrap: 12
+  survival_min: 0
+  swingup_min: 0
+  balanced_min: 0
+  tree_fidelity_min: 0
+  active_min: 0
